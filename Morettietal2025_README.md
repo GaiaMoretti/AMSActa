@@ -1,10 +1,9 @@
 README file
-
-Dataset title: “Development of a YOLOv8 algorithm for fruit detection in cucumber plants grown in polytunnel”
+Dataset title: “Experimental dataset on Lactuca sativa yield and water use efficiency: simplified soilless vs. soil-based systems in Colombia”
 
 Dataset Author: Gaia Moretti (University of Bologna), ORCID 0009-0003-8767-9270
 
-Dataset Contributors: Filippo Orazi (University of Bologna), ORCID 0009-0004-1328-8354; Matteo Landolfo (University of Bologna), ORCID  0009-0005-8680-4564; Vito Aurelio Cerasola (University of Bologna), ORCID 0000-0002-8565-8236; Giuseppina Pennisi (University of Bologna), ORCID 0000-0001-9377-4811; Giorgio Gianquinto (University of Bologna), ORCID 0000-0002-6548-5526 Francesco Orsini (University of Bologna), ORCID 0000-0001-6956-7054
+Dataset Contributors  : Vito Aurelio Cerasola (University of Bologna), ORCID 0000-0002-8565-8236; Nicola Michelon (University of Bologna), ORCID 0000-0001-6240-9520; Giuseppina Pennisi (University of Bologna), ORCID 0000-0001-9377-4811; Michael López Cepeda (SENA,Regional Agricultural Center, Colombia); Miguel Solarte (SENA,Regional Agricultural Center, Colombia);   Francesco Orsini (University of Bologna), ORCID 0000-0001-6956-7054; Giorgio Gianquinto (University of Bologna), ORCID 0000-0002-6548-5526
 
 Dataset Contact Person: Gaia Moretti (University of Bologna), ORCID 0009-0003-8767-9270, gaia.moretti6@unibo.it 
 
@@ -15,89 +14,50 @@ Dataset Contents
 The data set consists of: 
 
 •	1 quantitative data file saved in .csv format 
-" Morettietal2025_dataset.csv"
+" Morettietal2025_Dataset.xlsx"
 
 •	1 README file saved in .rtf format
-“ Morettietal2025_README.rtf"
+“ Morettietal2025_README.md"
 
 Data set Documentation
 Abstract
 
-This study introduces the design and assessment of a deep learning-based machine vision system for the real-time detection and classification of cucumber fruits grown under protected conditions in polytunnels. Greenhouse environments present unique challenges for automation, including fruit occlusion by foliage, overlapping structures, and inconsistent lighting. Precise identification of ripe and unripe cucumbers is vital for addressing labor shortages and maintaining harvest efficiency. To support model training, a tailored RGB image dataset was developed and used to train a YOLOv8-based detection framework, incorporating both pre- and post-processing techniques to enhance performance. Given the known limitations of occlusion in machine vision applications, the study investigated whether pruning practices—intended to improve fruit visibility—could enhance detection accuracy. The YOLOv8 model was trained and evaluated using two separate datasets: one representing unpruned (Control) cucumber plants and the other reflecting pruned (Pruned) conditions. Both datasets originated from high-wire cultivation systems. Results revealed similar mean average precision (mAP@0.5) scores for both treatments—87.6% for the control and 85.4% for the pruned dataset—indicating that pruning had minimal impact on detection outcomes. These findings suggest that altering plant architecture may not offer significant benefits either for vision-based fruit detection in protected cropping environments and in terms of productivity (yield). Overall, this work demonstrates the effectiveness of AI-driven solutions like YOLOv8 in addressing key challenges in automated harvesting and highlights their role in advancing precision agriculture technologies.
+This dataset explains a study conducted in Popayán, a city in Cauca region of southern Colombia, aiming a evaluate the effectiveness of a simplified soilless system for growing lettuce (Lactuca sativa L.) compared to traditional soil-based cultivation. The purpose of the research came by an increasing pressure on land and water resources intensifies the need for innovative approaches, especially in regions struggling with unpredictable rainfall patterns, limited arable soil, as well as issues related to low-quality water and food scarcity. Simplified soilless cultivation systems (SSC) have emerged as a viable solution for sustainable fresh food production and climate change conditions. The soilless system "Garrafas PET," was built using locally available materials such as bamboo poles and recycled plastic bottles, making it an accessible and cost-effective solution. Different types of growing substrates were tested, including coconut fiber, peat, carbonized rice husk, and a combination of all three (1:1:1).
+The adoption of the SSC system significantly enhanced WUE compare than traditional soil cultivation. In particular, peat demonstrated a significant improvement in efficiency of water use followed by rice hulls, either alone or mixed with peat and coconut fiber which also performed well, while coconut fiber alone was less effective but still improved the use of water than soil-based cultivation. Regarding marketable yield, the results varied based on the type of substrate used. The SSC system with peat achieved similar productivity levels to traditional soil cultivation, showing that soilless methods can achieve or even enhance conventional techniques performance. The combination of rice hulls with other materials also resulted in favorable yields, while coconut fiber alone produced the lowest output.
+Overall, this research highlights the potential of simplified soilless cultivation as a sustainable farming solution. By reducing water consumption and adapting to different environmental conditions, SSC systems can contribute to more resilient food production in regions facing water shortages, poor soil quality, and unpredictable weather patterns.
+
 
 Content of the file
 
-File Morettietal2025_dataset.csv contains one sheet where the agronomic variables are reported, indicating the treatment in the first column, the replicate in the second and the cumulative marketable yield in the third column.
-
-File specifics
-
-The file is in .csv format and can be used on several software (excel, R, Python, Matlab). The .csv file has the following specifics:
-•	Character set UTF-8
-•	Field delimiter « ; » (semicolon)
-
-
-Notes 
-
-The data are presented in the following publication:
-Moretti, G., Orazi, F., Landolfo, M., Cerasola, V.A., Pennisi, G., Gianquinto G., Orsini, F., 2025. Development of a YOLOv8 algorithm for fruit detection in cucumber plants grown in polytunnel. Acta horticolturae.
-
-
-Methodologies 
-
-The experiment was realized between May and August 2025 (Bologna, Italy) in the simplified hydroponic system and traditional cultivation system described in the abstract. An experiment of three-block experimental design three-times replicated was implemented, where 4 growing substrates were tested in combination with the plant position in the bottle line and compared with a soil-based trial on the same variety. The system design is composed by 20 lines of plastic bottles, each featuring 10 bottles (and each hosting 2 plants, for a total of 20 plants per line). Blocks were represented by the bottle lines, while replicates were represented by three plants harvested at 35 days after transplanting (DAT).
-The first and the last plant were not included in the data monitoring to mitigate the border effect. 
-
-
-List of variables
-
-README file
-Dataset title: “Development of a YOLOv8 algorithm for fruit detection in cucumber plants grown in polytunnel”
-
-Dataset Author: Gaia Moretti (University of Bologna), ORCID 0009-0003-8767-9270
-
-Dataset Contributors: Filippo Orazi (University of Bologna), ORCID 0009-0004-1328-8354; Matteo Landolfo (University of Bologna), ORCID  0009-0005-8680-4564; Vito Aurelio Cerasola (University of Bologna), ORCID 0000-0002-8565-8236; Giuseppina Pennisi (University of Bologna), ORCID 0000-0001-9377-4811; Giorgio Gianquinto (University of Bologna), ORCID 0000-0002-6548-5526 Francesco Orsini (University of Bologna), ORCID 0000-0001-6956-7054
-
-Dataset Contact Person: Gaia Moretti (University of Bologna), ORCID 0009-0003-8767-9270, gaia.moretti6@unibo.it 
-
-Publication Year: 2025
-
-Dataset Contents
-
-The data set consists of: 
-
-•	1 quantitative data file saved in .csv format 
-" Morettietal2025_dataset.csv"
-
-•	1 README file saved in .rtf format
-“ Morettietal2025_README.rtf"
-
-Data set Documentation
-Abstract
-This study introduces the design and assessment of a deep learning-based machine vision system for the real-time detection and classification of cucumber fruits grown under protected conditions in polytunnels. Greenhouse environments present unique challenges for automation, including fruit occlusion by foliage, overlapping structures, and inconsistent lighting. Precise identification of ripe and unripe cucumbers is vital for addressing labor shortages and maintaining harvest efficiency. To support model training, a tailored RGB image dataset was developed and used to train a YOLOv8-based detection framework, incorporating both pre- and post-processing techniques to enhance performance. Given the known limitations of occlusion in machine vision applications, the study investigated whether pruning practices—intended to improve fruit visibility—could enhance detection accuracy. The YOLOv8 model was trained and evaluated using two separate datasets: one representing unpruned (Control) cucumber plants and the other reflecting pruned (Pruned) conditions. Both datasets originated from high-wire cultivation systems. Results revealed similar mean average precision (mAP@0.5) scores for both treatments—87.6% for the control and 85.4% for the pruned dataset—indicating that pruning had minimal impact on detection outcomes. These findings suggest that altering plant architecture may not offer significant benefits either for vision-based fruit detection in protected cropping environments and in terms of productivity (yield). Overall, this work demonstrates the effectiveness of AI-driven solutions like YOLOv8 in addressing key challenges in automated harvesting and highlights their role in advancing precision agriculture technologies.
-Content of the file
-File Morettietal2025_dataset.csv contains one sheet where the agronomic variables are reported, indicating the treatment in the first column, the replicate in the second and the cumulative marketable yield in the third column.
+File Morettietal_AAHC24_Dataset.csv contains one sheet where the agronomic variables are reported, indicating the substrate treatment in the first column, the replicate in the second, the plant position (numbered from 1 to 3) in the third, and the measured variables from the fourth column.
 File specifics
 The file is in .csv format and can be used on several software (excel, R, Python, Matlab). The .csv file has the following specifics:
 •	Character set UTF-8
 •	Field delimiter « ; » (semicolon)
 Notes 
 The data are presented in the following publication:
-Moretti, G., Orazi, F., Landolfo, M., Cerasola, V.A., Pennisi, G., Gianquinto G., Orsini, F., 2025. Development of a YOLOv8 algorithm for fruit detection in cucumber plants grown in polytunnel. Acta horticolturae.
+Moretti, G., F., Michelon, Cerasola, V.A., C., Pennisi, Cepeda M.L, Solarte M.G., Orsini, M., Gianquinto, G., 2025. Enhancing water use efficiency (WUE) and yield in Lactuca sativa: a comparative study of simplified soilless cultivation (SSC) versus traditional soil-based systems in Colombia. Acta horticolturae.
+
 Methodologies 
-The experiment was realized between May and August 2025 (Bologna, Italy) in the simplified hydroponic system and traditional cultivation system described in the abstract. An experiment of three-block experimental design three-times replicated was implemented, where 4 growing substrates were tested in combination with the plant position in the bottle line and compared with a soil-based trial on the same variety. The system design is composed by 20 lines of plastic bottles, each featuring 10 bottles (and each hosting 2 plants, for a total of 20 plants per line). Blocks were represented by the bottle lines, while replicates were represented by three plants harvested at 35 days after transplanting (DAT).
+
+The experiment was realized between October and December 2024 (Popayan, Colombia) in the simplified hydroponic system and traditional cultivation system described in the abstract. An experiment of three-block experimental design three-times replicated was implemented, where 4 growing substrates were tested in combination with the plant position in the bottle line and compared with a soil-based trial on the same variety. The system design is composed by 20 lines of plastic bottles, each featuring 10 bottles (and each hosting 2 plants, for a total of 20 plants per line). Blocks were represented by the bottle lines, while replicates were represented by three plants harvested at 35 days after transplanting (DAT).  
 The first and the last plant were not included in the data monitoring to mitigate the border effect. 
 
+List of variables 
+Parameter	Description
 
-List of variables
+treatment      	Treatments with soil and growing media, including coconut coir                          (coconut), carbonized rice hulls (rice hulls), peat and a mix of the                    three substrates (mixed).    
+replicate	      Three replicates for each analyzed sample, named “1”, “2”, “3”
+Leaves_num	    Total number of leaves counted in the sampled plant at the harvest
+Marketable_fresh_weight	      Weight of the plants classified as marketable at the                                    harvest (grams per m-2)
+Leaf_area	      Total leaves area of plants (cm -2)
+SPAD	          SPAD value monitored with the SPAD (Konica Minolta). Adimensional
+WUE            	Water Use Efficiency (WUE) calculated as the grams of fresh marketable                   weight per Liter of water used.
 
-Parameter      	Description
-treatment	     Treatments with pruning of lateral shoots and non pruning
-replicate	     10 replicates per treatment
-Cumulative_Marketable_Yield   	Cumulative yield during the growing period of the plants classified as marketable at the harvest (kg per m-2)
 
+Notes 
 
-
-
+The data are presented in the following publication: Moretti, G.; Michelon, N.; Cerasola, V. A.; Pennisi, G.; Cepeda, M. L.; Solarte, M. G.; Orsini, F.; Gianquinto, G., 2025. Enhancing water use efficiency (WUE) and yield in Lactuca sativa: a comparative study of simplified soilless cultivation (SSC) versus traditional soil-based systems in Colombia. Acta horticolturae. https://dx.doi.org/10.17660/actahortic.2025.1422.36
 
 
 
