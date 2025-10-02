@@ -9,6 +9,8 @@ Dataset Contact Person: Gaia Moretti (University of Bologna), ORCID 0009-0003-87
 
 Publication Year: 2025
 
+Dataset License: CC BY 4.0 
+
 Dataset Contents
 
 The data set consists of: 
